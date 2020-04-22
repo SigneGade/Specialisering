@@ -1,0 +1,228 @@
+ <!DOCTYPE html>
+ <html lang="da">
+ <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;600;900&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- unik title til hver side-->
+    <title>Flexbox</title>
+    <!--udfyld content med en beskrivelse af sidens indhold - unik for hver side - op til ca. 155 karakterer-->
+    <meta name="description" content="Forside">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo-burger">
+                <a href="index.html"><img src="images/94104753_341627043467190_6939782082130345984_n.png" alt="logo-flexbox" style="width: auto; height: 70px;"></a>
+
+                <!--The toggle() method toggles between hide() and show() for the selected elements. -->
+                <label for="toggle">&#9776;</label>
+
+            </div>
+            <!--dette er en checkbox som gør det muligt at folde burgermenuen ud, og den skal ligge udenfor de to divs-->
+            <input type="checkbox" id="toggle" class="hidden">
+
+            <div id="main-nav">
+                <a href="#">Home</a>
+                <a href="#">News</a>
+                <div class="dropdown">
+                    <a href="#">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="lister">
+            <div class="container-punkter1">
+                <h3> Container (parents)</h3>
+                <div>
+                    <br>
+                    <h4>Display</h4>
+                    <p> Display bruges til at definere, at man arbejder med flexbox i sit css dokument. </p>
+                    <img src="images/Display.png">
+                </div>
+
+                <br>
+                <div>
+                    <h4>Flex-direction </h4>
+                    <p>Flex-direction indikererer hvilken retning containere skal være.</p>
+                    <p> Row: (Vandret) Fra venstre til højre.</p>
+                    <p> Row-reverse: (Vandret) Fra højre til venstre.</p>
+                    <p> Column: (Lodret) Oppe fra og ned.</p>
+                    <p> Column-reverse: (Lodret) Nede fra og op. </p>
+
+                    <img src="images/Flex-direction-illustration.png">
+                    <img src="images/flex-direction.png">
+                    <br>
+                    <br>
+
+                </div>
+                <div>
+                    <h4>Flex-wrap </h4>
+                    <p> Flex wrap bruges til at bestemme om indholdet skal være på en eller flere linjer.</p>
+                    <p> Nowrap: Alle flex-items vil være på en linje. </p>
+                    <p> Wrap: Flex items er på flere linjer fra top til bund. </p>
+                    <p> Wrap-reverse: Flex-items er på flere linjer fra bund til top. </p>
+                    <img src="images/Flex-wrap.png">
+                </div>
+                <br>
+                <div>
+                    <h4>Flex-flow </h4>
+                    <p> Flex-flow er en genvej til flex-direction og flex-wrap, som definerer flex containers "main and cross axes". Standardværdien er " row nowrap"</p>
+                    <img src="images/flex-flow.png">
+                </div>
+
+                <br>
+                <div>
+                    <h4>Jusitfy-content </h4>
+                    <p> Justify-content definerer, hvordan indholdet er placeret i forhold til hinanden i containeren.</p>
+                    <img src="images/justify-content.png">
+                    <img src="images/justify-content-kode.png">
+                </div>
+
+                <br>
+                <div>
+                    <h4>Align-items </h4>
+                    <p>Align-items definerer, hvordan indholdet skal placeres i containeren i forhold til den lodrette akse. </p>
+                    <img src="images/align-items-eksempel.png">
+                    <img src="images/align-items-kode.png">
+
+                </div>
+            </div>
+
+            <div class="container-punkter2">
+                <h3> Items (children)</h3>
+                <div>
+                    <h4>Order </h4>
+                    <p>Order bruges til at sætte rækkefølgen af items i den givne container.</p>
+                    <p>Hvis du sætter orderværdien på 1, er det den, der ses først.</p>
+                    <img src="images/order-eksempel.png">
+                    <img src="images/order-kode.png">
+                </div>
+
+
+
+                <div>
+                    <h4>Flex-grow </h4>
+                    <p>Flex-grow er en måde at definere, hvilke items der skal fylde mest i containeren. Der kan ikke bruges negative tal.</p>
+                    <img src="images/flex-grow-eksempel.png">
+                    <img src="images/flex-grow-kode.png">
+                </div>
+
+
+
+                <div>
+                    <h4>Flex-shrink </h4>
+                    <p>Flex-shrink er samme princip som flex-grow. Her kan man definere, hvilke items der skal fylde mindst i containeren.</p>
+                    <p>Flex-shrink bruges, hvis man ønsker at gøre et item mindre uden at tilskrive alle itmes en værdi.</p>
+                    <img src="images/flex-shrink-kode.png">
+                </div>
+
+
+                <div>
+                    <h4>Flex-basis</h4>
+                    <p>Flex-basis er en samlet variabel til at styre størrelsen på alle items i containeren.</p>
+                </div>
+
+
+
+                <div>
+                    <h4>Flex</h4>
+                    <p>Flex er en genvej i forhold til flex-grow, flex-shrink og flex-basis.</p>
+                    <img src="images/flex-eksempel.png">
+                </div>
+
+
+
+                <div>
+                    <h4>Align-self</h4>
+                    <p>Align-self bruges til at specificere et bestemt element inde i containeren, som overskriver align-items.</p>
+                    <img src="images/align-self-eksempel.png">
+                    <img src="images/align-self-kode.png">
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="container"></div>
+    <footer>
+        <!-- Footer main -->
+        <section class="ft-main">
+            <div class="ft-main-tekst">
+                <h2 class="ft-overskrift">Kontakt</h2>
+                <ul>
+                    <li><a href="#">Tlf. nummer</a></li>
+                    <li><a href="#">E-mail</a></li>
+                    <li><a href="#">Vej/gadenavn + nr.</a></li>
+                    <li><a href="#">Post nr. + by</a></li>
+                    <li><a href="#">Cvr. nummer</a></li>
+                </ul>
+            </div>
+
+
+            <div class="ft-main-tekst">
+                <h2 class="ft-overskrift">Åbningstider</h2>
+                <ul>
+                    <li><a href="#">Mandag-fredag</a></li>
+                    <li><a href="#">10.00-17.00</a></li>
+                    <li><a href="#">Lørdag-søndag</a></li>
+                    <li><a href="#">Lukket</a></li>
+                </ul>
+            </div>
+
+
+            <div class="ft-main-tekst">
+                <h2 class="ft-overskrift">Om (virksomhedsnavn)</h2>
+                <ul>
+                    <li><a href="#">Om os</a></li>
+                    <li><a href="#">Betingelser</a></li>
+                    <li><a href="#">Reklamation</a></li>
+                    <li><a href="#">Hjælp</a></li>
+                </ul>
+            </div>
+
+
+            <div class="ft-main-tekst">
+                <h2 class="ft-overskrift">Hold dig opdateret!</h2>
+                <p>Tilmeld dig vores nyhedsbrev og hold dig opdateret på de seneste nyheder</p>
+                <form>
+                    <input type="email" name="email" placeholder="Skriv din e-mail">
+                    <input type="submit" value="Tilmeld">
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer sociale medier -->
+        <section class="ft-social">
+            <ul class="ft-social-list">
+                <li><a href="#"> <img src="images/facebook.png" style="width: 30px; height: auto;"><i class="facebook"></i></a></li>
+                <li><a href="#"> <img src="images/mail-logo-png-3.png" style="width: 30px; height: auto;"><i class="mail"></i></a></li>
+                <li><a href="#"> <img src="images/instagram.png" style="width: 30px; height: auto;"><i class="instagram"></i></a></li>
+                <li><a href="#"> <img src="images/call.png" style="width: 30px; height: auto;"><i class="telefon"></i></a></li>
+            </ul>
+        </section>
+
+        <!-- Footer legal /copyright i bunden-->
+        <section class="ft-legal">
+            <ul class="ft-legal-list">
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li>&copy; 2019 Copyright (virksomheds navn)</li>
+            </ul>
+        </section>
+    </footer>
+
+
+</body></html>
